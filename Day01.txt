@@ -1,0 +1,43 @@
+1. 왜 리액트를 사용하는가?
+     - 최근 몇 년간 자바스크립트에 대한 개발이 활발하게 이뤄지고 있다.
+     - 예전에는 브라우저에서 간단한 연산이나 시각적인 효과를 줄 때만 자바스크립트를 사용했었음
+     - 현재는 화면단(react, vue, angular)뿐만 아니라 서버단(node)까지 확장하여 사용 중
+     - 기존의 화면단은 데이터가 변할 때마다 화면단에 변화를 줬는데,
+        리액트는 기존 화면단(뷰)를 날려버리고 새로운 화면단(뷰)을 렌더링하는 방식을 사용
+     - 리액트는 오직 뷰(화면단)만 신경쓰는 라이브러리
+     - 리액트에서 화면의 특정부분을 정하는 선언체가 존재하는데, 이것을 컴포넌트라고 함
+     - 컴포넌트는 화면의 부분부분을 나눠서 만듬
+     - 컴포넌트를 사용하게 되면 코드의 재사용률이 상승
+     - 리액트에서는 렌더링 이라는 개념을 사용한다.
+     - 렌더링은 사용자에게 화면을 표출하는 메소드
+     - 렌더링은 화면이 처음 표출되는 초기 렌더링과,
+        데이터가 변경되었을 때 다시 실행되는 리렌더링으로 구분된다.
+     - 렌더링은 render()라는 메소드로 실행되게 됨
+
+2. 리액트의 특징
+     - Virtual DOM(가상 돔)
+        리렌더링시에 새로운 뷰가 바로 DOM에 적용되는게 아니고,
+            새로 생성된 뷰는 Virtual DOM에 렌더링 되고,
+            이전 생성된 Virtual DOM과 비교
+            두 Virtual DOM의 바뀐 부분만 실제 DOM에 적용
+
+//node.js를 먼저 설치해줘야 함 (16.15.1)
+//vscode 확장 프로그램 설치 -  ESLint
+                             Reactjs code snippets
+                             Prettier - Code formatter
+//WIndows Power Shell 관리자 실행
+    Set-ExecutionPolicy RemoteSigned
+    Y
+    get-ExecutionPolicy
+
+//리액트 프로젝트는 터미널에서 만들어 줘야 함
+    npm create react-app first-react-app
+
+    cd .\first-react-app\     (tab으로 자동완성 이용)
+    npm start
+
+    종료시 ctrl+c
+
+// 컴포넌트 폴더 생성 - 새 파일 - rsc + tab
+// import
+// jsx?
