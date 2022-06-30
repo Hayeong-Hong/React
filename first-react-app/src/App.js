@@ -1,12 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 import HelloReact from './components/HelloReact';
-import ArrayRendering from './components/ArrayRendering';
+import CustomHooks from './components/CustomHooks';
 
 function App() {
   return (
-    <ArrayRendering>
-    </ArrayRendering>
+    <CustomHooks>
+    </CustomHooks>
   );
 }
 

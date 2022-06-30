@@ -1,0 +1,50 @@
+//scss 파일 수정 시 항상 서버 재부팅 필수
+@import './utils.scss';
+
+.SassComponent {
+    display: flex;
+    .box{ //CSS .SassComponent .box
+        background: $red;
+        cursor: pointer;
+        transition: all 0.3s ease-in;
+
+        &.red{ //box와 red클래스가 동시에 사용되었을 때
+            background: $red;
+            @include square(1);
+        }
+
+        &.orange{
+            background: $orange;
+            @include square(2);
+        }
+
+        &.yellow{
+            background: $yellow;
+            @include square(3);
+        }
+
+        &.green{
+            background: $green;
+            @include square(4);
+        }
+
+        &.blue{
+            background: $blue;
+            @include square(5);
+        }
+
+        &.indigo{
+            background: $indigo;
+            @include square(6);
+        }
+
+        &.violet{
+            background: $violet;
+            @include square(7);
+        }
+
+        &:hover{//.box에 hover됐을 때
+            background: black;
+        }
+    }
+}

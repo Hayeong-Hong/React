@@ -33,6 +33,7 @@ const ArrayRendering = () => {
 
   //배열의 map 함수를 이용하여 새로운 배열 만들기
   const nameList = names.map((bb) => (
+    //이벤트!에 매개변수가 있는 함수를 전달할 때는 무조건 화살표함수를 써야함
     <li onDoubleClick={() => onRemove(bb.id)} key={bb.id}>
       {bb.text}
     </li>
