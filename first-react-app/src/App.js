@@ -1,12 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 import HelloReact from './components/HelloReact';
-import CustomHooks from './components/CustomHooks';
+import UseEffect from './components/UseEffect';
 
 function App() {
   return (
-    <CustomHooks>
-    </CustomHooks>
+    <UseEffect>
+    </UseEffect>
   );
 }
 

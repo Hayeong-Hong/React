@@ -7,20 +7,20 @@ const UseEffect = () => {
 
   useEffect(
     () => {
-/*       console.log('name값이 업데이트될 때마다 실행.');
+      console.log('name값이 업데이트될 때마다 실행.');
       console.log({
         name,
         nickname,
       });
-      setCount(count + 1); */
+      setCount(count + 1);
       //클린업 함수 리턴
       return () => {//클린업 함수
         console.log('cleanup');
-        //setCount(0);
+        // setCount(0);
         console.log(name);
       }
     },
-    [name/* , nickname */] /* 어떤 값에 업데이트 상태에 따라서 실행될 것인지 지정 */
+    [name, nickname] /* 어떤 값에 업데이트 상태에 따라서 실행될 것인지 지정 */
   );
 
   const changeName = (e) => {
