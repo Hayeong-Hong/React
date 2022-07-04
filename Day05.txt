@@ -95,3 +95,4 @@ useState를 useReducer로 변경해서 렌더링 최적화
      - 대표적인 비동기 통신 라이브러리 : JQuery의 Ajax, React의 Axios
 
      https://jsonplaceholder.typicode.com/todos
+     https://newsapi.org/
