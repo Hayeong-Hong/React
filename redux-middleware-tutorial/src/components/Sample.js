@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
 const Sample = ({ loadingPost, loadingUsers, post, users }) => {
   return (
     <div>
       <section>
         <h1>포스트</h1>
-        {loadingPost && '로딩 중 . . .'}
+        {loadingPost && "로딩 중...."}
         {!loadingPost && post && (
           <div>
             <h3>{post.title}</h3>
@@ -16,11 +16,11 @@ const Sample = ({ loadingPost, loadingUsers, post, users }) => {
       <hr />
       <section>
         <h1>사용자 목록</h1>
-        {loadingUsers && '로딩 중 . . .'}
+        {loadingUsers && "로딩 중...."}
         {!loadingUsers && users && (
           <div>
             {users.map((user) => (
-              <li key={user.di}>
+              <li key={user.id}>
                 {user.username} ({user.email})
               </li>
             ))}

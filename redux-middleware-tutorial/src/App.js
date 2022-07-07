@@ -1,10 +1,7 @@
 import SampleContainer from "./container/SampleContainer";
 
-
 function App() {
-  return (
-    <SampleContainer/>
-  );
+  return <SampleContainer />;
 }
 
 export default App;
